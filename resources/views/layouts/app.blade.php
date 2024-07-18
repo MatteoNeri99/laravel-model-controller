@@ -10,5 +10,9 @@
 </head>
 <body>
 
+    <main>
+        @yield('main-content')
+    </main>
+
 </body>
 </html>
