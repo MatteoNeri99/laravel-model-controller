@@ -1,17 +1,25 @@
 @extends('layouts.app')
 
 @section('main-content')
+@foreach ($movies as $movie)
 
-<ul>
-    @foreach ($movies as $movie)
-    <li>
-        <p>
-            {{$movie->title}}
-        </p>
-    </li>
+<div class="card">
 
-    @endforeach
-</ul>
+
+    <p>
+      Titolo:  {{$movie->title}}
+    </p>
+
+    <p>
+       Titolo originale: {{$movie->original_title}}
+    </p>
+
+    <p>
+        Voto : {{$movie->vote}}
+    </p>
+
+</div>
+@endforeach
 
 
 @endsection

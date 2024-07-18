@@ -1,1 +1,19 @@
-@import  '~bootstrap/scss/bootstrap.scss';
+//@import  '-bootstrap/scss/bootstrap.scss';
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card{
+        margin-right: 1rem;
+        border: 1px solid black;
+        width: calc(100% / 5);
+        text-align: center;
+
+    }
+
+}
+
+
